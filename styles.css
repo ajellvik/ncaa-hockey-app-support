@@ -289,3 +289,28 @@ html {
     outline: 2px solid #007AFF;
     outline-offset: 2px;
 }
+
+/* Email Address Styling */
+.email-address {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+    transition: all 0.3s ease;
+    cursor: text;
+    user-select: all;
+}
+
+.email-address:hover {
+    background: #e9ecef;
+    border-color: #007AFF;
+}
+
+.email-address strong {
+    font-size: 1.1rem;
+    color: #007AFF;
+    letter-spacing: 0.5px;
+}
