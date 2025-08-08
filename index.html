@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCAA Hockey App - Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏒 NCAA Hockey App</h1>
+            <p class="subtitle">Support & Help Center</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>How can we help you?</h2>
+            <p>Find answers to common questions and get support for the NCAA Hockey App</p>
+        </section>
+
+        <section class="faq">
+            <h3>Frequently Asked Questions</h3>
+            
+            <div class="faq-item">
+                <h4>📱 App Features</h4>
+                <div class="faq-content">
+                    <p><strong>Q: What data sources does the app use?</strong></p>
+                    <p>A: We pull official data from NCAA.com for rankings and statistics, USCHO.com for weekly polls, and College Hockey News for detailed box scores. All data is updated in real-time.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h4>🔔 Notifications</h4>
+                <div class="faq-content">
+                    <p><strong>Q: How do I set up notifications for my favorite team?</strong></p>
+                    <p>A: Go to Settings → Select your favorite team → Enable notifications. You can customize which types of alerts you want to receive and set quiet hours.</p>
+                    
+                    <p><strong>Q: I'm not receiving notifications. What should I do?</strong></p>
+                    <p>A: Check that notifications are enabled in your iPhone Settings → NCAA Hockey App → Notifications. Also ensure you've selected a favorite team in the app settings.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h4>📊 Rankings & Stats</h4>
+                <div class="faq-content">
+                    <p><strong>Q: What are Pairwise Rankings?</strong></p>
+                    <p>A: Pairwise Rankings are the official NCAA selection criteria used to determine tournament seeding. They include RPI values and head-to-head comparisons between teams.</p>
+                    
+                    <p><strong>Q: How often are stats updated?</strong></p>
+                    <p>A: Statistics and rankings are updated in real-time as games conclude and official data becomes available from our sources.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h4>🏒 Live Games</h4>
+                <div class="faq-content">
+                    <p><strong>Q: Why don't I see a game that's happening?</strong></p>
+                    <p>A: We only display NCAA Division I Men's Ice Hockey games. Exhibition games, club hockey, or other divisions may not appear. Pull down to refresh if you think a game is missing.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h4>⚙️ Technical Issues</h4>
+                <div class="faq-content">
+                    <p><strong>Q: The app is running slowly or crashing</strong></p>
+                    <p>A: Try closing and reopening the app. If issues persist, restart your device. For iPhone SE or older devices, the app automatically optimizes the interface for better performance.</p>
+                    
+                    <p><strong>Q: Data isn't loading</strong></p>
+                    <p>A: Check your internet connection. The app requires an active connection to fetch live data. Some cached data is available offline.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h3>Still Need Help?</h3>
+            <div class="contact-options">
+                <div class="contact-card">
+                    <h4>📧 Email Support</h4>
+                    <p>Send us a detailed message about your issue</p>
+                    <a href="mailto:ajellvik@gmail.com?subject=NCAA Hockey App Support" class="btn">Contact Support</a>
+                </div>
+                
+                <div class="contact-card">
+                    <h4>🐛 Report a Bug</h4>
+                    <p>Found a bug? Let us know on GitHub</p>
+                    <a href="https://github.com/ajellvik/NCAA-Hockey-App/issues" class="btn" target="_blank">Report Issue</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-info">
+            <h3>App Information</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Current Version:</strong> 2.0
+                </div>
+                <div class="info-item">
+                    <strong>Compatibility:</strong> iOS 15.0+
+                </div>
+                <div class="info-item">
+                    <strong>Developer:</strong> Anton Jellvik
+                </div>
+                <div class="info-item">
+                    <strong>Category:</strong> Sports
+                </div>
+            </div>
+        </section>
+
+        <section class="privacy">
+            <h3>Privacy & Data</h3>
+            <p>The NCAA Hockey App respects your privacy:</p>
+            <ul>
+                <li>We don't collect personal information beyond what's necessary for notifications</li>
+                <li>All data displayed comes from public NCAA sources</li>
+                <li>Your favorite team preference is stored locally on your device</li>
+                <li>Notification settings are managed through iOS and can be revoked at any time</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NCAA Hockey App. Not affiliated with the NCAA or any collegiate hockey organization.</p>
+            <p>Made with ❤️ for college hockey fans</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ toggle functionality
+        document.querySelectorAll('.faq-item h4').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isVisible = content.style.display === 'block';
+                content.style.display = isVisible ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
